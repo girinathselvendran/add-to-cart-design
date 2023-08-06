@@ -1,47 +1,48 @@
 const placeOrder = () => {
-    alert("place order")
+    alert("place order Successfully")
 }
 
-const inputCategory = document.querySelectorAll("input[type ='radio']");
+const inputFields = document.querySelectorAll("input[type ='radio']");
 
 const totalAmount = document.getElementById("total-amount")
 
 const findSelectedList = () => {
     let selected = document.querySelector("input[name='cart-list']:checked");
-    console.log("selected Id", selected.id)
 
     if (selected.id == "cart-list1") {
-        let cartList = document.getElementById("color-and-size-pair1");
-        cartList.className = "color-and-size"
+        let cartList1 = document.getElementById("color-and-size-pair1");
         let cartList2 = document.getElementById("color-and-size-pair2");
         let cartList3 = document.getElementById("color-and-size-pair3");
-        cartList2.className = "color-and-size display-none"
-        cartList3.className = "color-and-size display-none"
+
+        cartList1.classList.remove("display-none");
+        cartList2.classList.add("display-none");
+        cartList3.classList.add("display-none");
     }
 
     if (selected.id == "cart-list2") {
-        let cartList = document.getElementById("color-and-size-pair2");
-        cartList.className = "color-and-size"
-
-        let cartList1 = document.getElementById("color-and-size-pair1");
-        let cartList3 = document.getElementById("color-and-size-pair3");
-        cartList1.className = "color-and-size display-none"
-        cartList3.className = "color-and-size display-none"
-    }
-    if (selected.id == "cart-list3") {
-        let cartList = document.getElementById("color-and-size-pair3");
-        cartList.className = "color-and-size"
         let cartList1 = document.getElementById("color-and-size-pair1");
         let cartList2 = document.getElementById("color-and-size-pair2");
-        cartList1.className = "color-and-size display-none"
-        cartList2.className = "color-and-size display-none"
+        let cartList3 = document.getElementById("color-and-size-pair3");
+
+        cartList1.classList.add("display-none");
+        cartList2.classList.remove("display-none");
+        cartList3.classList.add("display-none");
     }
-    
+
+    if (selected.id == "cart-list3") {
+        let cartList1 = document.getElementById("color-and-size-pair1");
+        let cartList2 = document.getElementById("color-and-size-pair2");
+        let cartList3 = document.getElementById("color-and-size-pair3");
+
+        cartList1.classList.add("display-none");
+        cartList2.classList.add("display-none");
+        cartList3.classList.remove("display-none");
+    }
+
     totalAmount.innerHTML = `Total: <b>DKK: ${selected.value}</b>`
 }
 
-inputCategory.forEach(item => {
-    console.log("item", item)
+inputFields.forEach(item => {
     item.addEventListener("change", findSelectedList);
 })
 
