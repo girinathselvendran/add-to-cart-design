@@ -2,7 +2,6 @@
   padding: 0px;
   margin: 0px;
   outline: none;
-
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -10,21 +9,27 @@
 select {
   width: 65.978px;
   height: 25.306px;
+} 
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
   align-items: center;
-  width: 450px;
 }
 
 .container label {
   cursor: pointer;
   padding: 20px;
 }
+
 .container div {
   max-width: 450px;
 }
@@ -33,7 +38,6 @@ select {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* width: 340.73px; */
 }
 
 .header-title span {
@@ -70,20 +74,12 @@ select {
 .option3 input[type="radio"] {
   width: 20px;
   height: 20px;
-  /* color: #007f61; */
   accent-color: #007f61;
-
-  /* margin: 15px; */
 }
 
 .pair-info :first-child {
-  /* color: red; */
   font-weight: 36px;
   padding-bottom: 5px;
-}
-
-.pair-info :nth-child(2) {
-  /* color: blue; */
 }
 
 .pair-size-color {
@@ -115,8 +111,6 @@ select {
   font-size: 12px;
 }
 
-/*  */
-
 .color-and-size * {
   margin: 5px 5px 0px 0px;
 }
@@ -126,9 +120,6 @@ select {
 }
 
 .total {
-  /* width: 95%; */
-  /* display: flex; */
-  /* justify-content: space-between; */
   padding: 20px;
   margin: 20px;
 }
@@ -158,10 +149,12 @@ select {
   font-size: large;
   cursor: pointer;
 }
-.copy-right {
+
+.copyright {
   width: 90%;
-  text-align: right !important;
+  text-align: right;
 }
+
 .display-none{
     display: none;
 }
