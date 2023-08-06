@@ -1,0 +1,167 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+select {
+  width: 65.978px;
+  height: 25.306px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  align-items: center;
+  width: 450px;
+}
+
+.container label {
+  cursor: pointer;
+  padding: 20px;
+}
+.container div {
+  max-width: 450px;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 340.73px; */
+}
+
+.header-title span {
+  width: 8rem;
+  margin: 0 10px;
+  border-bottom: 0.9px solid #c8c8c8;
+}
+
+.header-title p {
+  color: #007f61;
+  font-weight: 500;
+  font-size: 18.08px;
+}
+
+.option1,
+.option2,
+.option3 {
+  width: 80%;
+  min-height: 74.11px;
+  border: 0.9px solid #c8c8c8;
+  margin: 1% 0;
+}
+
+.option1 .pair-details,
+.option2 .pair-details,
+.option3 .pair-details {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.option1 input[type="radio"],
+.option2 input[type="radio"],
+.option3 input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  /* color: #007f61; */
+  accent-color: #007f61;
+
+  /* margin: 15px; */
+}
+
+.pair-info :first-child {
+  /* color: red; */
+  font-weight: 36px;
+  padding-bottom: 5px;
+}
+
+.pair-info :nth-child(2) {
+  /* color: blue; */
+}
+
+.pair-size-color {
+  display: flex;
+  align-items: end;
+  margin-left: 20px;
+}
+
+.pair-size-color * {
+  margin: 5px 5px 0px 0px;
+}
+
+.pair-size-color p {
+  margin: 0px;
+}
+
+.discount,
+.popular {
+  font-family: Inter;
+  font-weight: 600;
+}
+.discount .popular {
+  color: #007f61;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 12px;
+}
+
+/*  */
+
+.color-and-size * {
+  margin: 5px 5px 0px 0px;
+}
+
+.color-and-size {
+  margin-left: 45px;
+}
+
+.total {
+  /* width: 95%; */
+  /* display: flex; */
+  /* justify-content: space-between; */
+  padding: 20px;
+  margin: 20px;
+}
+
+.total-content .shipping-content {
+  color: #007f61;
+}
+
+.total-content {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.cart-btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.cart-btn button {
+  padding: 10px 0;
+  width: 90%;
+  margin-top: 20px;
+  color: white;
+  background-color: #007f61;
+  font-size: large;
+  cursor: pointer;
+}
+.copy-right {
+  width: 90%;
+  text-align: right !important;
+}
+.display-none{
+    display: none;
+}
